@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroung"
+    tools:context="com.example.hima.coursedetailsapp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Details"
+        android:layout_gravity="center"
+        android:layout_margin="32dp"
+        android:textColor="#ffffff"
+        android:textSize="36sp" />
+    <CheckBox
+        android:id="@+id/java_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/java"
+        android:textStyle="bold"
+        android:layout_marginLeft="86dp" />
+    <CheckBox
+        android:id="@+id/jee_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/jee"
+        android:textStyle="bold"
+        android:layout_marginLeft="86dp" />
+    <CheckBox
+        android:id="@+id/sql_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/sql"
+        android:textStyle="bold"
+        android:layout_marginLeft="86dp" />
+    <CheckBox
+        android:id="@+id/web_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/web"
+        android:textStyle="bold"
+        android:layout_marginLeft="86dp" />
+    <CheckBox
+        android:id="@+id/frame_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/frameworks"
+        android:textStyle="bold"
+        android:layout_marginLeft="86dp" />
+    <CheckBox
+        android:id="@+id/andr_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/android"
+        android:textStyle="bold"
+        android:layout_marginLeft="86dp" />
+    <CheckBox
+        android:id="@+id/python_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:text="@string/python"
+        android:layout_marginLeft="86dp" />
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/dispChoice"
+            android:layout_margin="16dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radioToast"
+                android:textColor="#a2d456"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ShowToast"/>
+            <RadioButton
+                android:id="@+id/radioDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ShowDialog"
+                android:textColor="#a2d456"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/feeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"
+        android:onClick="showFee"
+        android:text="Show Fee Deatails"/>
+</LinearLayout>

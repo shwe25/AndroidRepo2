@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="32dp"
+    tools:context="edu.jsp.myfirstapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heading"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/red1">
+    </TextView>
+
+    <Button
+        android:id="@+id/buttonEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:background="@color/blue1"
+        android:textSize="22dp"
+        android:text="Click Me for EditText Demo"/>
+
+</RelativeLayout>
