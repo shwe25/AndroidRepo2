@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context="org.jsp.shwe.internalstorageapp.Main2Activity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type text here"
+        android:ems="15"
+        android:layout_marginTop="62dp"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:text="Cache Internal"
+        android:id="@+id/button2"
+        android:onClick="saveCacheInternal"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Cache External"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/button3"
+        android:onClick="saveCacheExternal"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="External Private"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentStart="true"
+        android:id="@+id/button4"
+        android:onClick="savePrivateExternal"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="External Public"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentStart="true"
+        android:onClick="savePublicExternal"/>
+
+</RelativeLayout>
