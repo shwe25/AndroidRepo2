@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.jsp.shwe.sqliteexample.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student SQLite Database"
+        android:layout_marginTop="25dp"
+        android:textSize="24sp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/studId"
+        android:hint="Student ID"
+        android:layout_margin="32dp"
+        android:ems="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+    <EditText
+        android:id="@+id/studName"
+        android:hint="Student Name"
+        android:ems="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/studId"
+        android:layout_alignLeft="@+id/studId"
+        android:layout_alignStart="@+id/studId"
+        android:layout_marginTop="60dp" />
+    <EditText
+        android:id="@+id/studMarks"
+        android:hint="Student Marks"
+        android:ems="10"
+        android:layout_marginTop="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/studName"
+        android:layout_alignLeft="@+id/studName"
+        android:layout_alignStart="@+id/studName" />
+    <Button
+        android:text="add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/studMarks"
+        android:layout_alignLeft="@+id/studMarks"
+        android:layout_alignStart="@+id/studMarks"
+        android:layout_marginTop="29dp"
+        android:id="@+id/button"
+        android:onClick="add"/>
+    <Button
+        android:text="view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignRight="@+id/studMarks"
+        android:layout_alignEnd="@+id/studMarks"
+        android:id="@+id/button3"
+        android:onClick="view"/>
+    <Button
+        android:text="delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:id="@+id/button2"
+        android:onClick="delete"/>
+    <Button
+        android:text="Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:onClick="update"/>
+    <Button
+        android:text="View All"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:onClick="viewAll"/>
+</RelativeLayout>
